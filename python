@@ -1,0 +1,81 @@
+# cabinet = {3:"김예찬", 100:"김윤정"}
+# print(cabinet[3])
+# print(cabinet[100])
+
+# print(cabinet.get(3))
+# # print(cabinet[10])
+# print(cabinet.get(10), "사용 가능")
+# print("hi")
+
+# print(3 in cabinet)
+# print(5 in cabinet)
+
+# cabinet = {"A-3" : "김예찬", "B-100" : "김윤정"}
+# print(cabinet["A-3"])
+# print(cabinet["B-100"])
+
+# # 새손님
+# print(cabinet)
+# cabinet["A-3"] = "김아인" 
+# cabinet["C-20"] = "김범수"
+# print(cabinet)
+
+# print(cabinet.keys())
+
+# print(cabinet.values())
+
+# print(cabinet.items())
+# #비우기
+# cabinet.clear()
+# print(cabinet)
+
+# menu = ("돈까스", "치즈까스")
+# print(menu[0])
+# print(menu[1])
+
+# # menu.add("생선까스")  불가능
+
+# (name, age, hobby) = ("김예찬", 20, "코딩")
+# print(name, age, hobby)
+
+# 집합(중복 X, 순서 X)
+# my_set = {1,2,3,3,3}
+# print(my_set)
+
+# java = {"김예찬", "김윤정", "김범수"}
+# python = set(["김예찬", "김아인"])
+
+# # 교집합
+# print(java&python)
+# print(java.intersection(python))
+# # 합집합
+# print(java|python)
+# print(java.union(python))
+# # 차집합
+# print(java - python)
+# print(java.difference(python))
+
+# python.add("김윤정")
+# print(python)
+
+# java.remove("김윤정")
+# print(java)
+
+# menu = {"커피", "우유", "주스"}
+# print(menu ,type(menu))
+
+# menu = list(menu)
+# print(menu, type(menu))
+
+# menu = tuple(menu)
+# print(menu, type(menu))
+
+# menu = set(menu)
+# print(menu, type(menu))
+
+from random import *
+lst = [1,2,3,4,5]
+print(lst)
+shuffle(lst)
+print(lst)
+print(sample(lst, 1))
