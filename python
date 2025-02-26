@@ -1,7 +1,3 @@
-# cabinet = {3:"김예찬", 100:"김윤정"}
-# print(cabinet[3])
-# print(cabinet[100])
-
 # print(cabinet.get(3))
 # # print(cabinet[10])
 # print(cabinet.get(10), "사용 가능")
@@ -16,7 +12,7 @@
 
 # # 새손님
 # print(cabinet)
-# cabinet["A-3"] = "김아인" 
+# cabinet["A-3"] = "김아인"
 # cabinet["C-20"] = "김범수"
 # print(cabinet)
 
@@ -80,7 +76,7 @@
 # # print(lst)
 # # print(sample(lst, 1))
 
-# users = range(1, 21) #1~20까지 
+# users = range(1, 21) #1~20까지
 # users = list(users)
 # shuffle(users)
 
@@ -89,10 +85,177 @@
 # print("치킨 당첨자 : {0}" .format(winners[0]))
 # print("커피 당첨자 : {0}" .format(winners[1:]))
 
-weather = "맑음"
-if weather == "비":
-    print("우산 챙겨")
-elif weather == "미세먼지":
-    print("마스크")
-else:
-    print("준비물 무")
+# weather = input("오늘 날씨는 어떤가")
+# if weather == "비" or weather == "눈":
+#     print("우산 챙겨")
+# elif weather == "미세먼지":
+#     print("마스크")
+# else:
+#     print("준비물 무")
+
+# temp = int(input("기온은 어때? "))
+# if 30<=temp:
+#     print("Too hot")
+# elif 10<= temp<30:
+#     print("Fine")
+# elif 0<= temp and temp<10:
+#     print("Clothes")
+# else:
+#     print("So cold")
+
+# print("대기번호 : 1")
+
+# for waiting_no in range(1, 6):
+#     print("대기번호 : {0}".format(waiting_no))
+# starbucks = ["Minji", "Haerin", "Hani"]
+# for customer in starbucks:
+#     print("{0}, 커피가 준비됨".format(customer))
+
+# customer = "Haerin"
+# index = 5
+# while index >= 1:
+#     print("{0}, 커피가 준비됨. {1}번 남음".format(customer, index))
+#     index -= 1
+#     if index == 0:
+#         print("Coffee out")
+
+# customer = "Hani"
+# index = 1
+# while True:
+#     print("{0}, 커피가 준비됨. {1}번 남음".format(customer, index))
+#     index += 1
+
+# customer = "Minji"
+# person = "Unknown"
+
+# while person != customer :
+#     print("{0}, Coffee is already".format(customer))
+#     person = input("Name?")
+#     if person == customer:
+#         print("Yours")
+#     else:
+#         print("Fuck you")
+
+# absent = [2,5]
+# no_book = [7]
+# for student in range(1,11):
+#     if student in absent:
+#         continue
+#     elif student in no_book:
+#         print("We are done, {0} come on".format(student))
+#         break
+#     print("{0}, read the book".format(student))
+
+# student = [1,2,3,4,5]
+# print(student)
+# student = [i+100 for i in student]
+# print(student)
+
+# students = ["Hani", "Haerin", "Minji"]
+# students = [len(i) for i in students]
+# print(students)
+
+
+# students = ["Hani", "Haerin", "Minji"]
+# students = [i.upper() for i in students]
+# print(students)
+# import random
+
+# passenger = 0
+# for Cocoa in range(1,51):
+#     time = random.randrange(5,51 )
+   
+#     if 5<= time<15:
+#         passenger += 1
+#         print("[0]{0}번째 손님 (소요시간 : {1}분)".format(Cocoa, time))
+#     else:
+#         print("[ ]{0}번째 손님 (소요시간 : {1}분)".format(Cocoa, time))
+# print("총 탑승 승객 : {0} 분".format(passenger))
+
+# def open_account():
+#     print("새 계좌 생성.")
+    
+# def deposit(balance, money):
+#     print("입금 완료 잔액은 {0}원.".format(balance+money))
+#     return balance+money
+
+# def withdraw(balance, money):
+#     if balance >= money:
+#         print("출금 완료 잔액{0}원".format(balance-money))
+#         return balance-money
+#     else:
+#         print("출금불가. 잔액{0}원".format(balance))
+
+# def withdraw_night(balance, money):
+#     commission = 100
+#     return commission, balance - money - commission
+
+
+# balance = 0
+# balance = deposit(balance, 1000)
+# # balance = withdraw(balance, 2000)
+# # balance = withdraw(balance, 500)
+# commission, balance =withdraw_night(balance, 500)
+# print("수수료{0}원, 잔액{1}원".format(commission, balance))
+
+# def profile(name, age, main_lang):
+#     print("Name : {0}\tAge: {1}\tMain lang:{2}"\
+#         .format(name, age, main_lang))
+
+# profile("김예찬", 23, "C언어")
+# profile("김윤정", 47, "영어")
+
+# def profile(name, age=20, main_lang="pyhton"):
+#     print("Name : {0}\tAge: {1}\tMain lang:{2}"\
+#         .format(name, age, main_lang))
+# profile("김예찬")
+# profile("김윤정")
+
+# def profile(name, age, main_lang):
+#     print(name, age, main_lang)
+
+# profile(name="김예찬", main_lang="C언어", age = 23)
+# profile(main_lang="영어", name = "김윤정", age=47)
+
+# def profile(name, age, lang1, lang2, lang3, lang4, lang5):
+#     print("Name : {0}\tAge : {1}\t".format(name, age), end=" ")
+#     print(lang1, lang2, lang3, lang4, lang5)
+
+# def profile(name, age, *language):
+#     print("Name : {0}\tAge : {1}\t".format(name, age), end=" ")
+#     for lang in language:
+#         print(lang, end=" ")
+#     print()
+
+# profile("김예찬", 23, "Python", "Java", "C", "C++", "C#", "Java")
+# profile("김윤정", 47, "영어", "Html")
+
+# gun = 10
+
+# def checkpoint(soldiers):
+#     global gun #전역 공간 사용
+#     gun = gun - soldiers
+#     print("[함수 내]남은 총 : {0}".format(gun))
+    
+# def checkpoint_ret(gun, soldiers):
+#     gun = gun - soldiers
+#     print("[함수 내]남은 총 : {0}".format(gun))
+#     return gun
+    
+# print("전체 총 : {0}".format(gun))
+# gun = checkpoint_ret(gun, 2)
+# print("남은 총 : {0}".format(gun))
+
+
+def std_weight(height, gender):
+    height_m = height / 100  # cm → m 변환
+    if gender == "남자":
+        return round(height_m * height_m * 22, 2)  # 남자 기준
+    else:
+        return round(height_m * height_m * 21, 2)  # 여자 기준
+
+height = 175
+gender = "남자"
+weight = std_weight(height, gender)
+
+print("키 {0}cm {1}의 표준 체중은 {2}kg 입니다.".format(height, gender, weight))
