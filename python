@@ -268,9 +268,30 @@
 # for num in range(1,21):
 #     print("대기번호 : "+ str(num).zfill(3))
 
-answer = input("아무값 입력 : ")  #항상 문자열로 저장
-print(type(answer))
+# answer = input("아무값 입력 : ")  #항상 문자열로 저장
+# print(type(answer))
 # print(answer+"입니다" )
+
+# print("{0: >10}".format(500)) #빈자리 빈공간, 우측 정렬, 10칸 띄기
+
+# print("{0: >+10}".format(500))#양수일때 + 음수일때 -
+# print("{0: >+10}".format(-500))
+
+# print("{0:_<+10}".format(500))#왼쪽 정렬 빈칸 _
+
+print("{0:,}".format(10000000)) #세자리마다 콤마
+print("{0:+,}".format(10000000)) #세자리마다 콤마, 부호
+
+print("{0:^<+30,}".format(10000000))
+
+print("{0:.2f}".format(5/3))  #소수점
+
+
+
+
+
+
+
 
 
 
