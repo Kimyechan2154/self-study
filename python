@@ -246,16 +246,34 @@
 # gun = checkpoint_ret(gun, 2)
 # print("남은 총 : {0}".format(gun))
 
+# def std_weight(height, gender): 
+#     if gender == "남자":
+#         return height*height*22
+#     else:
+#         return height*height*21
 
-def std_weight(height, gender):
-    height_m = height / 100  # cm → m 변환
-    if gender == "남자":
-        return round(height_m * height_m * 22, 2)  # 남자 기준
-    else:
-        return round(height_m * height_m * 21, 2)  # 여자 기준
+# height = 175
+# gender = "남자"
+# weight = round(std_weight(height/100, gender), 2)
+# print("키 {0}cm {1}의 표준 체중은 {2}kg 입니다.".format(height, gender, weight))
 
-height = 175
-gender = "남자"
-weight = std_weight(height, gender)
+# import sys
+# print("python", "Java", file=sys.stdout)
+# print("python", "Java", file=sys.stderr)
 
-print("키 {0}cm {1}의 표준 체중은 {2}kg 입니다.".format(height, gender, weight))
+# score = {"수학":0, "영어":50, "코딩":100}
+# for subject, score in score.items():
+#     print(subject.ljust(3), str(score).rjust(4), sep=":")
+
+# for num in range(1,21):
+#     print("대기번호 : "+ str(num).zfill(3))
+
+answer = input("아무값 입력 : ")  #항상 문자열로 저장
+print(type(answer))
+# print(answer+"입니다" )
+
+
+
+
+
+
