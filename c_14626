@@ -1,0 +1,49 @@
+void c_14626() {
+
+    char ISBN[14];
+    int num, sum = 0, check, i;
+
+    scanf("%s", ISBN);     // 표준 입력을 받아서 배열 형태의 문자열에 저장
+    for (i = 0; i < 13; i++) {
+        if (ISBN[i] != '*') {
+            num = ISBN[i] - '0';
+            if (i % 2 != 1) {
+                sum += num;
+
+                //printf("%d\n", num);
+            }
+            else {
+                sum += num * 3;
+                //printf("%d\n", num * 3);
+            }
+        }
+    }
+    //printf("sum1 : %d\n", sum);
+
+    sum = sum % 10;
+    //printf("sum : %d\n", sum);
+    for (i = 0; i < 13; i++) {
+        if (ISBN[i] == '*') {
+            if (i % 2 != 1) {
+                check = (10 - sum) % 10;
+            }
+            else { // i % 2 == 1 인 경우 (가중치 3)
+                for (int n = 0; n <= 9; n++) {
+                    if ((sum + (n * 3)) % 10 == 0) {
+                        check = n;
+                        break; // 답을 찾았으니 반복문 탈출
+                    }
+                }
+            }
+        }
+    }
+    printf("%d", check);
+}
+
+
+int main() {
+
+    c_14626();
+
+    return 0;
+}
