@@ -1,0 +1,35 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+void c_10818() {
+
+    int N =0;
+
+    int number = 0,big = 0, small = 0;
+
+    scanf("%d\n", &N);
+
+    for (int i = 0; i < N; i++) {
+        scanf("%d", &number);
+
+        if (i == 0) {
+            big = number;
+            small = number;
+        }
+        else if (number > big) {
+            big = number;
+        }
+        else if (number < small) {
+            small = number;
+        }
+
+    }
+    printf("%d %d", small, big);
+}
+
+int main() {
+
+    c_10818();
+
+    return 0;
+}
